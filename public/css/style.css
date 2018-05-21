@@ -331,7 +331,7 @@ footer ul li a.active {
 }
 
 #kickstarter {
-  background: #eedec4;
+  background: #eee;
 }
 
 html,
@@ -526,10 +526,6 @@ section.cta .overlay {
   background: #fdcc52;
   background: -webkit-linear-gradient(#fdcc52, #fdc539);
   background: linear-gradient(#eee, #eee);
-}
-
-.bg-color {
-  background-color: #eedec4;
 }
 
 .text-primary {
