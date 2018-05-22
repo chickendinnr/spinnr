@@ -31,7 +31,7 @@
             <a class="nav-link js-scroll-trigger" href="#kickstarter">Kickstarter</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Spinnr App</a>
+            <a class="nav-link js-scroll-trigger" href="#features">Live Demo</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -47,8 +47,8 @@
         <div class="row h-100">
           <div class="col-lg-6 my-auto">
             <div class="header-content mx-auto">
-              <h2 class="mb-5">Spinnr is a photo to music translator for iPhone and </br>Android</h2>
-              <a href="#kickstarter" id="btncolor" class="btn btn-outline btn-xl js-scroll-trigger">Learn More!</a>
+              <h2 class="mb-5">Spinnr is a photo to music translator for iPhone and Android</h2>
+              <a href="/login" id="btncolor" class="btn btn-outline btn-xl js-scroll-trigger">Learn More!</a>
             </div>
           </div>
           <div class="col-lg-6 my-auto">
@@ -60,8 +60,8 @@
                       <img src="img/tshirt-spinnr.svg" class="img-fluid" alt="">
                     </div> -->
                   <div class="video">
-                    <iframe width="375" height="211" src="https://www.youtube.com/embed/c9yGMZ9ANL0" frameborder="0" allow="autoplay; encrypted-media"
-                      allowfullscreen></iframe>
+                    <iframe width="375" height="220" src="https://www.youtube.com/embed/c9yGMZ9ANL0" frameborder="0" allow="autoplay; encrypted-media"
+                      allowfullscreen class="youtubevid"></iframe>
                   </div>
                   <div class="button">
                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -79,8 +79,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">Kickstarter coming soon!</h2>
-          <p>Join our mailing list below</p>
+    <!--       <h2 class="section-heading">Kickstarter coming soon!</h2>
+          <p>Join our mailing list below</p> -->
+
+          <video autoplay playsinline class="handsome"></video>
+          <canvas id="paint"></canvas>
+          <button id = "snap" onClick="takePhoto()">📸</button>
+          <button id = "delete" onClick="deletePhoto()">🗑️</button>
         </div>
       </div>
     </div>
@@ -190,8 +195,10 @@
   </div>
   </div> -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
-    crossorigin="anonymous "></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
     crossorigin="anonymous "></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
