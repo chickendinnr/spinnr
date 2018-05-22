@@ -53,7 +53,7 @@
   color: #eedec4;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -92,7 +92,7 @@
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
     color: #ea4049;
   }
-}
+}*/
 
 header.masthead {
   position: relative;
@@ -100,7 +100,10 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: black;
-  background-color: #eedec4;
+  background-image: url("../img/recordstore.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header.masthead .header-content {
@@ -125,6 +128,7 @@ header.masthead .device-container .screen img {
 
 .mb-5 {
   color: white;
+  margin-bottom: 0;
 }
 
 .iphone {
@@ -132,10 +136,9 @@ header.masthead .device-container .screen img {
   margin: 0 auto;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   header.masthead {
     height: 85vh;
-    /* min-height: 775px; */
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -149,11 +152,7 @@ header.masthead .device-container .screen img {
   header.masthead .device-container {
     max-width: 325px;
   }
-  /* .iphone {
-    padding-right: 45%;
-    width: 175%;
-  } */
-}
+} 
 
 /* FORM STYLES */
 
@@ -432,9 +431,7 @@ section.download .badges .badge-link img {
   section.download h2 {
     font-size: 70px;
   }
-  /* .iphone {
-    margin-left: 30%;
-  } */
+  
 }
 
 section.features .section-heading {
@@ -581,15 +578,19 @@ ul {
   padding: 1em;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("../img/recordstore.jpg");
 
-  /* Full height */
-  height: 100%;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
