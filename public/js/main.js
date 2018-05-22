@@ -51,6 +51,7 @@
 // Listen for form submit
 
 // Initialize Firebase
+
 var config = {
   apiKey: "AIzaSyCxJuTlAg7uaZgViNAO8GtP3691ZYMHUrY",
   authDomain: "contactform-f3f52.firebaseapp.com",
@@ -78,17 +79,6 @@ function submitForm(e) {
 
   // Show alert
   document.querySelector(".alert").style.display = "block";
-
-  // Hide alert after 3 seconds
-  // setTimeout(function() {
-  //   document.querySelector(".alert").style.display = "none";
-  // }, 3000);
-
-  // var fade = document.getElementById("fade").style;
-  // fade.opacity = 1;
-  // (function fade() {
-  //   (.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
-  // })();
 
   // Reset form
   document.getElementById("contactForm").reset();
