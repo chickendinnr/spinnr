@@ -1,17 +1,11 @@
 const express = require("express");
-const env = require("dotenv").config({
-  path: "./env"
-});
+const dotenv = require('dotenv');
+const env = require('./env');
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const xoath2 = require("xoauth2");
-
-require('dotenv').config({
-
-});
-
 
 const app = express();
 
@@ -49,9 +43,9 @@ app.post("/", (req, res) => {
     auth: {
       type: "OAuth2",
       user: "spinnrapp@gmail.com",
-      clientId: dotenv.clientId,
-      clientSecret: "ZzAlOMbcZc-UuDOf_Pkgc8-R",
-      refreshToken: "1/T_E28TkTfS37WwzB3h5zHQcdqChtLEumgfEitsUZcqM"
+      clientId: env.clientId,
+      clientSecret: env.clientSecret,
+      refreshToken: env.refreshToken
     }
   });
 
