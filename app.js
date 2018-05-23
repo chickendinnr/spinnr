@@ -222,6 +222,12 @@ app.post("/", (req, res) => {
 });
 
 
-app.listen(process.env.PORT, () => console.log("Server Running"));
-
+// in sublime
+var port = process.env.PORT || 3000;
+app.get('/', function (req, res) {
+ res.send(JSON.stringify({ Hello: 'World'}));
+});
+app.listen(port, function () {
+ console.log('Example app listening on port !');
+});
 
