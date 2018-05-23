@@ -68,7 +68,7 @@ let spotifyKey = "";
 async function go() {
   // first ask for get user media
 
-  let stream = navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function success(stream) {
+  const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function success(stream) {
         video.srcObject = stream;
 }
 
