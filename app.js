@@ -14,7 +14,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'ef4c9809f63242c68b6187cb9e7e8189'; // Your client id
 var client_secret = '8738d90ce4cf4ee39dffc51fe04cef57'; // Your secret
-var redirect_uri = 'http://localhost:3000/callback'; // Your redirect uri
+var redirect_uri = 'https://spinnr.herokuapp.com/callback'; // Your redirect uri
 
 
 
