@@ -1,6 +1,10 @@
 {
   "name": "nodewebsite",
   "version": "1.0.0",
+  "engines": {
+    "npm": "5.5.1",
+    "node": "v8.9.1"
+  },
   "description": "",
   "main": "index.js",
   "dependencies": {
