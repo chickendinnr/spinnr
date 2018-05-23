@@ -33,10 +33,6 @@
     "url": "https://github.com/rjmcbain/nodewebsite/issues"
   },
   "homepage": "https://github.com/rjmcbain/nodewebsite#readme"
-  },
-  "engines":{
-    "node": "v8.9.1",
-    "npm": "5.5.1"
-
+},
 }
 
