@@ -19,6 +19,7 @@
     "nodemailer": "^4.6.4",
     "nodemon": "^1.17.4",
     "path": "^0.12.7",
+    "request": "^2.87.0",
     "xoauth2": "^1.2.0"
   },
   "devDependencies": {},
@@ -38,4 +39,3 @@
   },
   "homepage": "https://github.com/rjmcbain/nodewebsite#readme"
 }
-
