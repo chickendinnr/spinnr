@@ -221,7 +221,7 @@ app.post("/", (req, res) => {
   });
 });
 
-const PORT = process.env.PORT;
-app.listen(PORT, () => console.log("Server Running"));
+
+app.listen(process.env.PORT, () => console.log("Server Running"));
 
 
