@@ -15,43 +15,48 @@
 </head>
 
 <!-- BandAid fix for the weird scrolling size-pop I was getting because of the sticky navigation bar up top. -->
+
 <body onLoad="window.scroll(0, 1)">
 
 
-<div id="navbar">
-  <h4 class="brand">Join our mailing list to get updates about our<img class="kicklogo" src="https://d3mlfyygrfdi2i.cloudfront.net/kickstarter-logo-color.png">  and more.</h4>
-  <form id="contactForm">
-              
-     <input placeholder="example@email.com" type="email" name="email" id="email" required>
-              
+  <div id="navbar">
+    <h4 class="brand">Join our mailing list to get updates about our
+      <img class="kicklogo" src="https://d3mlfyygrfdi2i.cloudfront.net/kickstarter-logo-color.png"> and more.</h4>
+    <form id="contactForm" class="resetForm">
+
+      <input placeholder="example@email.com" onfocus="this.placeholder=''" onblur="this.placeholder='Type'" type="email" name="email"
+        id="email" required>
+
       <button type="submit" class="submit">Submit</button>
-  </form>
-</div>
-
-
-<div class="container">
-
-
-
-  <div class="row head">
-    <div class="title col-lg-12"></div>
-    <div class="description col-lg-12">
-      <div class = "translator"><h1>
-      Spinnr is a photo to music translator coming soon to iPhone and Android. Take a photo of an album cover, and listen in Spotify. Try our browser demo below to see it in action.</h1>
-      <a href="/login" class="btn btn-primary">Start Demo</a>
-      <h6>You will be prompted to log into Spotify.</h6>
-    </div>
-    </div>
-    <!-- <div class="video col-lg-6">
-      <video id="sampleMovie" src="../public/img/webvideo.mp4" controls></video>
-    </div> -->
+    </form>
   </div>
 
 
+  <div class="container">
 
 
 
-<!--   <div class="row demo">
+    <div class="row head">
+      <div class="title col-lg-12"></div>
+      <div class="description col-lg-12">
+        <div class="translator">
+          <h1>
+            Spinnr is a photo to music translator coming soon to iPhone and Android. Take a photo of an album cover, and listen in Spotify.
+            Try our browser demo below to see it in action.</h1>
+          <a href="/login" class="btn btn-primary">Start Demo</a>
+          <h6>You will be prompted to log into Spotify.</h6>
+        </div>
+      </div>
+      <!-- <div class="video col-lg-6">
+      <video id="sampleMovie" src="../public/img/webvideo.mp4" controls></video>
+    </div> -->
+    </div>
+
+
+
+
+
+    <!--   <div class="row demo">
     <div class="tryitout col-lg-12"></div>
 
 
@@ -83,19 +88,26 @@
 
 
 
-  <div class="row social justify-content-center">
-    
-    <div class="email col-xs-12 col-md-1"><i class="fa fa-envelope"></i></div>
-    <div class="facebook col-xs-12 col-md-1"><i class="fa fa-facebook"></i>  </div>
-    <div class="twitter col-xs-12 col-md-1" > <i class="fa fa-twitter"></i></div>
-    <!-- <div class="email col-xs-12 col-md-2"><i class="fa fa-envelope"></i></div> -->
-  </div>
-  <div class="row footer">
-    <div class="col-xs-12 col-lg-12">Copyright ©2018 Spinnr Inc.<br>All Rights Reserved</div>
-  </div>
-</div>
+    <div class="row social justify-content-center">
 
-<!-- <div class="bg-color">
+      <div class="email col-xs-12 col-md-1">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="facebook col-xs-12 col-md-1">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <div class="twitter col-xs-12 col-md-1">
+        <i class="fa fa-twitter"></i>
+      </div>
+      <!-- <div class="email col-xs-12 col-md-2"><i class="fa fa-envelope"></i></div> -->
+    </div>
+    <div class="row footer">
+      <div class="col-xs-12 col-lg-12">Copyright ©2018 Spinnr Inc.
+        <br>All Rights Reserved</div>
+    </div>
+  </div>
+
+  <!-- <div class="bg-color">
   <section class="contact bg-color">
     <div class="container">
       <h2>Follow Us!</h2>
@@ -127,34 +139,34 @@
  -->
 
 
-<!-- NAVBAR SCRIPT -->
+  <!-- NAVBAR SCRIPT -->
 
-<script>
-window.onscroll = function() {myFunction()};
+  <script>
+    window.onscroll = function () { myFunction() };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
-
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
-  crossorigin="anonymous "></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
-  crossorigin="anonymous "></script>
-<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-<script src="../public/js/main.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+    crossorigin="anonymous "></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+    crossorigin="anonymous "></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+  <script src="../public/js/main.js"></script>
 </body>
 
 </html>

@@ -25,9 +25,6 @@ function submitForm(e) {
 
   saveMessage(email);
 
-  // Show alert
-  document.querySelector(".alert").style.display = "block";
-
   // Reset form
   document.getElementById("contactForm").reset();
 }
