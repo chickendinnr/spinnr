@@ -1,5 +1,11 @@
 ﻿.head {
-    background-color: #222222;
+
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .title {
@@ -8,7 +14,20 @@
     background-size: 40vh;
     background-position: center;
     height: 30vh;
- 
+    margin-top: 30px;
+    background-color: #222222;
+ }
+
+.kicklogo {
+    width: 10%;
+    margin: 6px;
+}
+
+.translator {
+    width: 70%;
+    margin: 0 auto;
+
+
 }
 
 .video {
@@ -25,11 +44,13 @@
 
 .description {
     color: white;
-    text-align:center;
+    text-align: center;
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 150%;
+    font-size: 120%;
     display: flex;
     align-items: center;
+    background: rgba(34, 34, 34, .8);
+
 
 }
 
@@ -43,64 +64,106 @@
 }
 
 .btn {
-    width: 100%;
+    width: 40%;
     background-color: #ea4049;
+    margin: 0 auto;
+    display: block;
     font-family: 'Didact Gothic', sans-serif;
     border: none;
-    font-size: 120%;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
+    margin-top: 7%;
+    font-size: 100%;
 }
 
-#olid {
-    display: flex;
-    align-items: center;
-    padding-top: 15%;
-    text-align: left;
-    padding-bottom: 1%;
-
+.btn:hover {
+    width: 40%;
+    background-color: #1DB954;
 }
+
+h6{
+    margin-bottom: 10vh;
+color: #898989;
+}
+
 
 .instructions {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 120%;
     text-align: center;
+    background-color: #222222;
 }
 
 .kickstarter {
-    background-color: darkgreen;
+    background-color: #EFDFC2;
 }
 
 .mailinglist {
-    background-color: green;
+    background-color: #EFDFC2;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 100%;
+    text-align: center;
+
 }
 
 .social {
-    background-color: silver;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 130%;
+    text-align: center;
+    padding-top: 5%;
+      background-color: #222222;
 }
 
 .facebook {
-    background-color: darkblue;
+    background-color: #3b5998;
+    color: white;
+    opacity: .8;
 }
 
 .twitter {
-    background-color: lightblue;
+    background-color: #00aced;
+    color: white;
+    opacity: .8;
 }
 
-.instagram {
-    background-color: pink;
-}
 
 .email {
-    background-color: gray;
+    background-color: #EFDFC2;
+    color: black;
+    opacity: .8;
 }
 
 .footer {
-    background-color: black;
+    text-align: center;
+    font-size: 70%;
+    color: #898989;
+    background-color: #222222;
+    height: 10vh;
+}
+
+.facebook:hover {
+    opacity: 1;
+}
+
+.twitter:hover {
+    opacity: 1;
+}
+
+.email:hover  {
+    opacity: 1;
 }
 
 /* .bg-color {
     background: #eedec4;
   } */
+
+  h4 {
+    display: inline;
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 9vh;
+}
 
 
 
@@ -120,8 +183,66 @@
 
 
 
-ol {
-    line-height: 200%
-    margin-top: 20%;
+
+
+
+
+
+
+
+/*NAVBAR STYLING*/
+#navbar {
+  overflow: hidden;
+  background-color: #EFDFC2;
+  z-index: 10000;
+  border-bottom: 2px solid black;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 100%;
+  text-align: center;
+
 }
 
+#navbar a {
+  float: left;
+  display: block;
+  color: #EFDFC2;
+  height: 30px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#brand {
+     display: inline;
+}
+
+#email {
+    display: inline;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+
+form {
+    display: inline;
+}
+
+.submit {
+    background-color: #EFDFC2;
+}
