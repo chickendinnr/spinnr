@@ -14,25 +14,31 @@
   <link href="../public/css/style.css" rel="stylesheet" />
 </head>
 
+<!-- BandAid fix for the weird scrolling size-pop I was getting because of the sticky navigation bar up top. -->
+<body onLoad="window.scroll(0, 1)">
+
 
 <div id="navbar">
   <h4 class="brand">Join our mailing list to get updates about our<img class="kicklogo" src="https://d3mlfyygrfdi2i.cloudfront.net/kickstarter-logo-color.png">  and more.</h4>
   <form id="contactForm">
               
-                <input placeholder="example@email.com" type="email" name="email" id="email" required>
+     <input placeholder="example@email.com" type="email" name="email" id="email" required>
               
-              <button type="submit" class="submit">Submit</button>
+      <button type="submit" class="submit">Submit</button>
   </form>
 </div>
 
 
 <div class="container">
+
+
+
   <div class="row head">
     <div class="title col-lg-12"></div>
     <div class="description col-lg-12">
       <div class = "translator"><h1>
       Spinnr is a photo to music translator coming soon to iPhone and Android. Take a photo of an album cover, and listen in Spotify. Try our browser demo below to see it in action.</h1>
-      <a href="/login" class="btn btn-primary">Start the Demo</a>
+      <a href="/login" class="btn btn-primary">Start Demo</a>
       <h6>You will be prompted to log into Spotify.</h6>
     </div>
     </div>
@@ -78,9 +84,10 @@
 
 
   <div class="row social justify-content-center">
+    
     <div class="email col-xs-12 col-md-1"><i class="fa fa-envelope"></i></div>
     <div class="facebook col-xs-12 col-md-1"><i class="fa fa-facebook"></i>  </div>
-    <div class="twitter col-xs-12 col-md-1"> <i class="fa fa-twitter"></i></div>
+    <div class="twitter col-xs-12 col-md-1" > <i class="fa fa-twitter"></i></div>
     <!-- <div class="email col-xs-12 col-md-2"><i class="fa fa-envelope"></i></div> -->
   </div>
   <div class="row footer">

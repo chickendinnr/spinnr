@@ -4,8 +4,9 @@
 
 body {
     background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    background-color: #EFDFC2;
 }
 
 .title {
@@ -14,8 +15,11 @@ body {
     background-size: 40vh;
     background-position: center;
     height: 30vh;
-    margin-top: 30px;
     background-color: #222222;
+ }
+
+ .container {
+    margin-top: 30px;
  }
 
 .kicklogo {
@@ -127,8 +131,8 @@ color: #898989;
 
 
 .email {
-    background-color: #EFDFC2;
-    color: black;
+    background-color: gray;
+    color: white;
     opacity: .8;
 }
 
@@ -167,8 +171,6 @@ h1 {
 
 
 
-
-
 /* LIVE DEMO STYLING*/
 
 .handsome, #paint {
@@ -199,6 +201,7 @@ h1 {
   font-family: 'Didact Gothic', sans-serif;
   font-size: 100%;
   text-align: center;
+    width: 100vw;
 
 }
 
@@ -210,6 +213,8 @@ h1 {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 13px;
+
+
 
 }
 
