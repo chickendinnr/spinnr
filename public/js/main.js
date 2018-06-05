@@ -27,6 +27,14 @@ function submitForm(e) {
 
   // Reset form
   document.getElementById("contactForm").reset();
+
+  // DOM MANIPULATION FOR SUCCESS MESSAGE
+  document.getElementById("navbar").style.backgroundColor = "#4BB543";
+  document.getElementById("navbar").style.color = "white";
+  document.getElementById("navbar").innerHTML = "You are now on our mailing list, you're awesome!";
+
+
+
 }
 
 // Function to get form values
