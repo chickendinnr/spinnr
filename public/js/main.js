@@ -37,6 +37,16 @@ function submitForm(e) {
 
 }
 
+window.onload = function() {
+
+  // Normalize the various vendor prefixed versions of getUserMedia.
+  navigator.getUserMedia = (navigator.getUserMedia ||
+                            navigator.webkitGetUserMedia ||
+                            navigator.mozGetUserMedia || 
+                            navigator.msGetUserMedia);
+
+};
+
 // Function to get form values
 
 function getInputVal(id) {
@@ -63,7 +73,7 @@ async function go() {
   // first ask for get user media
 
   const stream = await navigator.mediaDevices.getUserMedia({
-    video: { facingMode: "user" }
+    video: { facingMode: "environment" }
   });
     video.srcObject = stream;
 }
