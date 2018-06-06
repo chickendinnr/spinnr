@@ -63,7 +63,7 @@ async function go() {
   // first ask for get user media
 
   const stream = await navigator.mediaDevices.getUserMedia({
-    video: { facingMode: "environment" }
+    video: { facingMode: "user" }
   });
     video.srcObject = stream;
 }
