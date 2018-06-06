@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 
 
 // Bogus ass fix I camer up with for url redirect with tokens and all that mess
-newURL = "";
+let newURL = "";
 app.get("/#" + newURL, (req, res) => {
   res.render("demo.html");
 });
