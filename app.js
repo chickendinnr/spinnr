@@ -141,8 +141,9 @@ app.get("/callback", function(req, res) {
             querystring.stringify({
               access_token: access_token,
               refresh_token: refresh_token
-            })
-        );
+            }));
+        
+        res.render("demo.html");
       } else {
         res.redirect(
           "/#" +
@@ -150,6 +151,7 @@ app.get("/callback", function(req, res) {
               error: "invalid_token"
             })
         );
+        res.render("demo.html");
       }
     });
   }
