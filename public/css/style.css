@@ -59,15 +59,23 @@ body {
 }
 
 .demo {
-    background-color: #eedec4;
+    height: 60vh;
 }
 
 .stream {
-    text-align: center;
-
+    height: 60vh;
+    
 }
 
-.btn {
+.info {
+    height: 60vh;
+}
+
+.ins {
+    height: 60vh;
+}
+
+.demoBtn {
     width: 40%;
     background-color: #ea4049;
     margin: 0 auto;
@@ -79,7 +87,21 @@ body {
     font-size: 100%;
 }
 
-.btn:hover {
+.demoBtn:hover {
+    width: 40%;
+    background-color: #1DB954;
+}
+
+.spinBtn {
+    width: 40%;
+    background-color: #ea4049;
+    margin: 0 auto;
+    font-family: 'Didact Gothic', sans-serif;
+    border: none;
+    font-size: 100%;
+}
+
+.spinBtn:hover {
     width: 40%;
     background-color: #1DB954;
 }
@@ -169,20 +191,32 @@ h1 {
     margin-top: 9vh;
 }
 
+.description {
+    height: 60vh;
+}
+
+.ins {
+background-color: green;
+}
+
+
+.info {
+background-color: red;
+}
+
 
 
 /* LIVE DEMO STYLING*/
 
 .handsome, #paint {
-    width: 90%;
-    margin: 0 auto;
-    display: block;
+    width: 100%;
+    margin-top: 5vh;
 }
+
 
 #paint {
   width: 0%;
 }
-
 
 
 

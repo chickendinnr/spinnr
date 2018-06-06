@@ -65,7 +65,7 @@ async function go() {
   const stream = await navigator.mediaDevices.getUserMedia({
     video: { facingMode: "environment" }
   });
-  video.srcObject = stream;
+    video.srcObject = stream;
 }
 
 function takePhoto() {

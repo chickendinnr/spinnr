@@ -39,6 +39,10 @@ app.get("/", (req, res) => {
   res.render("index.html");
 });
 
+// app.get("/demo", (req, res) => {
+//   res.render("demo.html");
+// });
+
 ////////
 
 /**
@@ -64,7 +68,7 @@ app
   .use(cors())
   .use(cookieParser());
 
-app.get("/login", function(req, res) {
+app.get("/demo", function(req, res) {
   var state = generateRandomString(16);
   res.cookie(stateKey, state);
 
@@ -79,7 +83,9 @@ app.get("/login", function(req, res) {
         redirect_uri: redirect_uri,
         state: state
       })
+
   );
+   res.render("demo.html");
 });
 
 app.get("/callback", function(req, res) {
