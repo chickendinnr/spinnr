@@ -39,9 +39,9 @@ app.get("/", (req, res) => {
   res.render("index.html");
 });
 
-// app.get("/demo", (req, res) => {
-//   res.render("demo.html");
-// });
+app.get("/#", (req, res) => {
+  res.render("demo.html");
+});
 
 ////////
 
@@ -85,7 +85,6 @@ app.get("/demo", function(req, res) {
       })
 
   );
-   res.render("demo.html");
 });
 
 app.get("/callback", function(req, res) {
