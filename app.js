@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 
 
 
-app.get("/#", (req, res) => {
+app.get("/test", (req, res) => {
   res.render("demo.html");
 });
 
@@ -101,7 +101,7 @@ app.get("/callback", function(req, res) {
 
   if (state === null || state !== storedState) {
     res.redirect(
-      "/#/" +
+      "/test/#" +
         querystring.stringify({
           error: "state_mismatch"
         })
@@ -151,7 +151,7 @@ app.get("/callback", function(req, res) {
 
       } else {
         res.redirect(
-          "/#/test" +
+          "/test/#" +
             querystring.stringify({
               error: "invalid_token"
             })
