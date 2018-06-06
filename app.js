@@ -39,9 +39,14 @@ app.get("/", (req, res) => {
   res.render("index.html");
 });
 
-app.get("/#", (req, res) => {
+
+// Bogus ass fix I camer up with for url redirect with tokens and all that mess
+newURL = " ";
+app.get("/#" + newURL, (req, res) => {
   res.render("demo.html");
 });
+
+
 
 ////////
 
@@ -90,6 +95,10 @@ app.get("/demo", function(req, res) {
 app.get("/callback", function(req, res) {
   // your application requests refresh and access tokens
   // after checking the state parameter
+ let newURL = querystring.stringify({
+              access_token: access_token,
+              refresh_token: refresh_token
+            });
 
   var code = req.query.code || null;
   var state = req.query.state || null;
@@ -142,8 +151,6 @@ app.get("/callback", function(req, res) {
               access_token: access_token,
               refresh_token: refresh_token
             }));
-        
-        res.render("demo.html");
       } else {
         res.redirect(
           "/#" +
@@ -151,7 +158,6 @@ app.get("/callback", function(req, res) {
               error: "invalid_token"
             })
         );
-        res.render("demo.htl");
       }
     });
   }
