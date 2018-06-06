@@ -107,6 +107,12 @@ function takePhoto() {
     "]" +
     "}";
 
+
+
+//DOM MANIPULATION WHEN PHOTO IS TAKEN
+    document.getElementById("myVideo").remove();
+    document.getElementById("spinBtn").remove();
+
   $.ajax({
     type: "POST",
     url:
@@ -117,6 +123,8 @@ function takePhoto() {
     headers: {
       "Content-Type": "application/json"
     },
+
+    
 
     success: function(data, textStatus, jqXHR) {
       var access_token = window.location.href
