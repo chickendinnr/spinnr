@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 
 
 
-app.get("/demo ", (req, res) => {
+app.get("/#", (req, res) => {
   res.render("demo.html");
 });
 
@@ -101,7 +101,7 @@ app.get("/callback", function(req, res) {
 
   if (state === null || state !== storedState) {
     res.redirect(
-      "/demo/#" +
+      "/#/" +
         querystring.stringify({
           error: "state_mismatch"
         })
@@ -143,7 +143,7 @@ app.get("/callback", function(req, res) {
 
         // we can also pass the token to the browser to make requests from there
         res.redirect(
-          "/demo?" +
+          "/test/#" +
             querystring.stringify({
               access_token: access_token,
               refresh_token: refresh_token
@@ -151,7 +151,7 @@ app.get("/callback", function(req, res) {
 
       } else {
         res.redirect(
-          "/demo/#" +
+          "/#/test" +
             querystring.stringify({
               error: "invalid_token"
             })
