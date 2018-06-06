@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 
 
 
-app.get("/#", (req, res) => {
+app.get("/#" +access_token +refresh_token, (req, res) => {
   res.render("demo.html");
 });
 
@@ -148,7 +148,7 @@ app.get("/callback", function(req, res) {
               access_token: access_token,
               refresh_token: refresh_token
             }));
-         res.render("demo.html");
+
       } else {
         res.redirect(
           "/#" +
