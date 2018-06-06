@@ -41,7 +41,7 @@ app.get("/", (req, res) => {
 
 
 
-app.get("/#" +access_token +refresh_token, (req, res) => {
+app.get("/#", (req, res) => {
   res.render("demo.html");
 });
 
