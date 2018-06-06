@@ -151,7 +151,7 @@ app.get("/callback", function(req, res) {
               error: "invalid_token"
             })
         );
-        res.render("demo.html");
+        res.render("demo.htl");
       }
     });
   }
