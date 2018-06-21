@@ -49,19 +49,14 @@ body {
     display: flex;
     align-items: center;
     background: rgba(34, 34, 34, .8);
-
-
 }
+
 
 .demo {
     height: 60vh;
 }
 
-.stream {
-    height: 60vh;
-    background: rgba(34, 34, 34, .4);
-    
-}
+
 
 .info {
     height: 60vh;
@@ -74,7 +69,7 @@ body {
 .demoBtn {
     width: 40%;
     background-color: #ea4049;
-    margin: 0 auto;
+    margin: 0;
     display: block;
     font-family: 'Didact Gothic', sans-serif;
     border: none;
@@ -201,21 +196,36 @@ h1 {
 
 /* LIVE DEMO STYLING*/
 
-.handsome, #paint {
-    width: 70%;
-    margin-top: 2%; 
-    position: relative;
-  }
 
 
 #paint {
  width: 0%;
 }
 
+.handsome {
+  border: 2px solid;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+#loading {
+  background-image: url("../img/record-loading.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+/*  height: 40vh;
+  width: 40vh;*/
+  margin: auto;
+  animation: spin 5s infinite;
+  animation-timing-function: linear;
+}
 
 
-
-
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
 
 
 

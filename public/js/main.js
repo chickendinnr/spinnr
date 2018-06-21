@@ -110,8 +110,13 @@ function takePhoto() {
 
 
 //DOM MANIPULATION WHEN PHOTO IS TAKEN
+    //Gets rid of the STREAM and SPIN IT button
     document.getElementById("myVideo").remove();
     document.getElementById("spinBtn").remove();
+    //Adds the LOADING record icon
+    document.getElementById("loading").style.height = "40vh";
+    document.getElementById("loading").style.width = "40vh";
+
 
   $.ajax({
     type: "POST",
