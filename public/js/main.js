@@ -161,7 +161,7 @@ function takePhoto() {
         document.getElementById("bandName").innerText =  "by " + data.albums.items["0"].artists["0"].name;
         document.getElementById("weThink").innerText =  "We're pretty sure that's...";
         document.getElementById("launchBtn").setAttribute('href', data.albums.items["0"].external_urls.spotify);
-
+        document.getElementById("loaded").style.display = 'inherit';
 
 
       
