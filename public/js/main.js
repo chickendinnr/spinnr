@@ -132,6 +132,7 @@ function takePhoto() {
     
 
     success: function(data, textStatus, jqXHR) {
+      document.getElementById("loading").remove();
       var access_token = window.location.href
         .split("=")
         .join("&")
@@ -150,12 +151,20 @@ function takePhoto() {
           Authorization: "Bearer " + spotifyKey
         }
       }).done(function(data) {
-        window.open(data.albums.items["0"].external_urls.spotify, "_blank");
+        // window.open(data.albums.items["0"].external_urls.spotify, "_blank");
         console.log(data.albums.items["0"]);
+        console.log(data.albums.items["0"].name);
+        console.log(data.albums.items["0"].artists["0"].name);
+        console.log(data.albums.items["0"].images[1].url);
+        document.getElementById("albumPreview").style.backgroundImage = 'url(' + data.albums.items["0"].images[1].url + ')';
+        document.getElementById("albumTitle").innerText = data.albums.items["0"].name;
+        document.getElementById("bandName").innerText =  "by " + data.albums.items["0"].artists["0"].name;
+        document.getElementById("weThink").innerText =  "We're pretty sure that's...";
+        document.getElementById("launchBtn").setAttribute('href', data.albums.items["0"].external_urls.spotify);
 
-        // var albumURL = document.getElementById('player');
-        // albumURL.setAttribute("src", 'https://open.spotify.com/embed?uri='+ data.albums.items["0"].uri);
-        // console.log(data.albums.items["0"].uri);
+
+
+      
       });
 
       console.log(musicInfo);

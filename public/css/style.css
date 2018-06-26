@@ -288,3 +288,26 @@ form {
 .submit {
     background-color: #EFDFC2;
 }
+
+#weThink {
+  margin-bottom: 3px;
+}
+
+#loaded {
+  margin: auto;
+}
+
+
+
+#albumPreview {
+  width: 30vh;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+ 
+#bandName {
+  display: block;
+}
