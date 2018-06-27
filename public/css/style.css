@@ -97,11 +97,22 @@ h6 {
   color: #898989;
 }
 
-.instructions {
+#instructions {
   font-family: "Didact Gothic", sans-serif;
-  font-size: 120%;
+  font-size: 100%;
+  margin: auto;
   text-align: center;
-  background-color: #222222;
+  list-style-type: none;
+}
+
+#insDiv {
+vertical-align: middle;
+margin: auto;
+}
+
+li {
+  margin-top: 4%;
+  line-height: 90%;
 }
 
 .kickstarter {
