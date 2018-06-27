@@ -1,204 +1,190 @@
 ﻿.head {
-
 }
 
 body {
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: #EFDFC2;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: #efdfc2;
 }
 
 .title {
-    background-image: url("../img/tshirt-spinnr.png");
-    background-repeat: no-repeat;
-    background-size: 40vh;
-    background-position: center;
-    height: 30vh;
-    background-color: #222222;
- }
+  background-image: url("../img/tshirt-spinnr.png");
+  background-repeat: no-repeat;
+  background-size: 40vh;
+  background-position: center;
+  height: 30vh;
+  background-color: #222222;
+}
 
- .container {
-    margin-top: 30px;
- }
+.container {
+  margin-top: 30px;
+}
 
 .kicklogo {
-    width: 10%;
-    margin: 6px;
+  width: 10%;
+  margin: 6px;
 }
 
 .translator {
-    width: 70%;
-    margin: 0 auto;
-
-
+  width: 70%;
+  margin: 0 auto;
 }
 
 .video {
-    height: 60vh;
-
+  height: 60vh;
 }
 
-
+.list-inline-item {
+  text-decoration: none;
+  color: white;
+}
 
 .description {
-    color: white;
-    text-align: center;
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 120%;
-    display: flex;
-    align-items: center;
-    background: rgba(34, 34, 34, .8);
+  color: white;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 120%;
+  display: flex;
+  align-items: center;
+  background: rgba(34, 34, 34, 0.8);
 }
-
 
 .demo {
-    height: 60vh;
+  height: 60vh;
 }
 
-
-
 .info {
-    height: 60vh;
+  height: 60vh;
 }
 
 .ins {
-    height: 60vh;
+  height: 60vh;
 }
 
 .demoBtn {
-    width: 40%;
-    background-color: #ea4049;
-    margin: 0;
-    font-family: 'Didact Gothic', sans-serif;
-    border: none;
-    margin-bottom: 0%;
-    margin-top: 7%;
-    font-size: 100%;
+  width: 40%;
+  background-color: #ea4049;
+  margin: 0;
+  font-family: "Didact Gothic", sans-serif;
+  border: none;
+  margin-bottom: 0%;
+  margin-top: 7%;
+  font-size: 100%;
 }
 
 .demoBtn:hover {
-    width: 40%;
-    background-color: #1DB954;
+  width: 40%;
+  background-color: #1db954;
 }
 
 #spinBtn {
-    width: 40%;
-    background-color: #ea4049;
-    margin: 0 auto;
-    font-family: 'Didact Gothic', sans-serif;
-    border: none;
-    font-size: 100%;
+  width: 40%;
+  background-color: #ea4049;
+  margin: 0 auto;
+  font-family: "Didact Gothic", sans-serif;
+  border: none;
+  font-size: 100%;
 }
 
 #spinBtn:hover {
-    width: 40%;
-    background-color: #1DB954;
+  width: 40%;
+  background-color: #1db954;
 }
 
-h6{
-    margin-bottom: 10vh;
-color: #898989;
+h6 {
+  margin-bottom: 10vh;
+  color: #898989;
 }
-
 
 .instructions {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 120%;
-    text-align: center;
-    background-color: #222222;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 120%;
+  text-align: center;
+  background-color: #222222;
 }
 
 .kickstarter {
-    background-color: #EFDFC2;
+  background-color: #efdfc2;
 }
 
 .mailinglist {
-    background-color: #EFDFC2;
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 100%;
-    text-align: center;
-
+  background-color: #efdfc2;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 100%;
+  text-align: center;
 }
 
 .social {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 130%;
-    text-align: center;
-    padding-top: 5%;
-      background-color: #222222;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 130%;
+  text-align: center;
+  padding-top: 5%;
+  background-color: #222222;
 }
 
 .facebook {
-    background-color: #3b5998;
-    color: white;
-    opacity: .8;
+  background-color: #3b5998;
+  color: white;
+  opacity: 0.8;
 }
 
 .twitter {
-    background-color: #00aced;
-    color: white;
-    opacity: .8;
+  background-color: #00aced;
+  color: white;
+  opacity: 0.8;
 }
 
-
 .email {
-    background-color: gray;
-    color: white;
-    opacity: .8;
+  background-color: gray;
+  color: white;
+  opacity: 0.8;
 }
 
 .footer {
-    text-align: center;
-    font-size: 70%;
-    color: #898989;
-    background-color: #222222;
-    height: 10vh;
+  text-align: center;
+  font-size: 70%;
+  color: #898989;
+  background-color: #222222;
+  height: 10vh;
 }
 
 .facebook:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .twitter:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-.email:hover  {
-    opacity: 1;
+.email:hover {
+  opacity: 1;
 }
 
 /* .bg-color {
     background: #eedec4;
   } */
 
-  h4 {
-    display: inline;
-    font-size: 16px;
+h4 {
+  display: inline;
+  font-size: 16px;
 }
 
 h1 {
-    margin-top: 9vh;
+  margin-top: 9vh;
 }
 
 .description {
-    height: 60vh;
+  height: 60vh;
 }
 
 .ins {
-
 }
-
-
-
-
 
 /* LIVE DEMO STYLING*/
 
-
-
 #paint {
- width: 0%;
+  width: 0%;
 }
 
 .handsome {
@@ -212,46 +198,42 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-/*  height: 40vh;
+  /*  height: 40vh;
   width: 40vh;*/
   margin: auto;
   animation: spin 5s infinite;
   animation-timing-function: linear;
 }
 
-
 @keyframes spin {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-
-
 
 /*NAVBAR STYLING*/
 #navbar {
   overflow: hidden;
-  background-color: #EFDFC2;
+  background-color: #efdfc2;
   z-index: 10000;
   border-bottom: 2px solid black;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: "Didact Gothic", sans-serif;
   font-size: 100%;
   text-align: center;
-    width: 100vw;
-
+  width: 100vw;
 }
 
 #navbar a {
   float: left;
   display: block;
-  color: #EFDFC2;
+  color: #efdfc2;
   height: 30px;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 13px;
-
-
-
 }
 
 .content {
@@ -269,23 +251,22 @@ h1 {
 }
 
 #brand {
-     display: inline;
+  display: inline;
 }
 
 #email {
-    display: inline;
-    margin-bottom: 7px;
-    margin-top: 7px;
-    margin-left: 20px;
+  display: inline;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  margin-left: 20px;
 }
 
-
 form {
-    display: inline;
+  display: inline;
 }
 
 .submit {
-    background-color: #EFDFC2;
+  background-color: #efdfc2;
 }
 
 #weThink {
@@ -295,10 +276,7 @@ form {
 #loaded {
   margin: auto;
   display: none;
-
 }
-
-
 
 #albumPreview {
   width: 30vh;
@@ -308,11 +286,57 @@ form {
   background-position: center;
   margin: auto;
 }
- 
+
 #bandName {
   display: block;
 }
 
 #launchBtn {
-  background-color: #1DB954;
+  background-color: #1db954;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1 {
+    font-size: 30px;
+  }
+  /* .title {
+    margin-top: 20px;
+  } */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1 {
+    font-size: 20px;
+    margin-top: -15px;
+  }
+
+  .title {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1 {
+    font-size: 25px;
+    margin-top: -15px;
+  }
+
+  .title {
+    margin-top: 20px;
+  }
+
+  h6 {
+    margin-top: 10px;
+  }
+
+  .demoBtn {
+    text-align: center;
+    width: 50%;
+  }
 }
