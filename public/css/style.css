@@ -346,6 +346,15 @@ form {
     height: 50vh;
 }
 
+#instructions {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+ ol {
+    padding: 0px;
+ }
+
 .handsome {
     margin-bottom: 175px;
 }
