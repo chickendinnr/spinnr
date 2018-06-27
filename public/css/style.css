@@ -345,6 +345,28 @@ form {
   .description {
     height: 50vh;
 }
+
+.handsome {
+    margin-bottom: 175px;
+}
+
+#spinBtn {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    padding-top: 0%;
+}
+footer {
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+}
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
