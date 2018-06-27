@@ -330,6 +330,21 @@ form {
   .title {
     margin-top: 20px;
   }
+
+  h6 {
+    margin-top: 10px;
+    margin-bottom: -15px;c
+  }
+
+  .demoBtn {
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .description {
+    height: 50vh;
+}
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -343,7 +358,8 @@ form {
   }
 
   h6 {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: -15px;
   }
 
   .demoBtn {
