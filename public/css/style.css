@@ -375,7 +375,7 @@ form {
 footer {
     position: absolute;
     top: 1000px;
-    width: 96%;
+    width: 100%;
 }
 }
 
@@ -415,7 +415,7 @@ footer {
 footer {
     position: absolute;
     top: 1000px;
-    width: 93%;
+    width: 100%;
     padding-left: 0px;
 }
 }
