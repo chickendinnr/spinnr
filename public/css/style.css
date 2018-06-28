@@ -356,7 +356,10 @@ form {
  }
 
 .handsome {
-    margin-bottom: 175px;
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  margin-bottom: 175px;
 }
 
 #spinBtn {
