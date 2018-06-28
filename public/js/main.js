@@ -183,8 +183,3 @@ function deletePhoto() {
 go().catch(err => {
   alert(err.message);
 });
-
-$('html, body').css({
-  overflow: 'hidden',       //disables scrolling
-  width: '100%'            //disables scrolling
-});
