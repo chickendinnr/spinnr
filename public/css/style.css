@@ -398,9 +398,24 @@ footer {
     text-align: center;
     width: 50%;
   }
-  footer {
+
+  #spinBtn {
     position: absolute;
-    top: 1100px;
-    width: 100%;
+    top: 65%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .social .email .facebook .twitter {
+    padding-top: 0%;
+    /* padding-right: 0%; */
+}
+footer {
+    position: absolute;
+    top: 1000px;
+    width: 93%;
+    padding-left: 0px;
 }
 }
