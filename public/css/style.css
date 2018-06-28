@@ -333,7 +333,7 @@ form {
 
   h6 {
     margin-top: 10px;
-    margin-bottom: -15px;c
+    margin-bottom: -15px;
   }
 
   .demoBtn {
@@ -368,13 +368,14 @@ form {
     justify-content: center;
 }
 
-.social {
+.social .email .facebook .twitter {
     padding-top: 0%;
+    /* padding-right: 0%; */
 }
 footer {
     position: absolute;
     top: 1000px;
-    width: 100%;
+    width: 96%;
 }
 }
 
@@ -397,4 +398,9 @@ footer {
     text-align: center;
     width: 50%;
   }
+  footer {
+    position: absolute;
+    top: 1100px;
+    width: 100%;
+}
 }
